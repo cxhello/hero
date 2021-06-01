@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+logging:
+  level:
+    com.cxhello.hero.mapper: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
